@@ -9,4 +9,5 @@ passwrd STRING)";
 
 $db->exec($query) or die('Create db failed');
 
+$db->close();
 ?>

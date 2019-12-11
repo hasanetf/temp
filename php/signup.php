@@ -18,4 +18,5 @@ if($count > 0){
   $db->exec($query) or die('Add user into db failed');
 }
 
+$db->close();
 ?>

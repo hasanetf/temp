@@ -6,5 +6,5 @@ $query = "DROP TABLE users";
 
 $db->exec($query) or die('Delete table from db failed');
 
-
+$db->close();
 ?>

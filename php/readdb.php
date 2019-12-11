@@ -9,4 +9,5 @@ while ($row = $res->fetchArray()){
   echo "{$row['username']}\nPasswd: {$row['passwrd']}\n";
 }
 
+$db->close();
 ?>
