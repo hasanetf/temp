@@ -15,7 +15,7 @@ $mypassword=$_POST['password'];
 $query = "SELECT * FROM C4users WHERE username='$myusername' and passwrd='$mypassword'";
 $res = $db->exec($query) or die('Select users from db failed');
 
-$count = sqlite_num_rows($res);
+$count = count($res);
 
 if($count > 0){
   echo "User exist";
