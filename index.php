@@ -18,18 +18,30 @@
             </div>
         </header>
         <div class="body_div" id="body_div">
-            <h1 align="center" title="Name of the page">Login/Signup <br/> page
+            <h1 align="center" title="Name of the page">Signup <br/> page
                 <a href="top"></a>
             </h1>
             <div class="form" align="center">
-                <form action="/action_page.php">
+                <form action="php/signup.php">
                     Username:<br>
                     <input type="text" name="username">
                     <br>
                     Password:<br>
                     <input type="text" name="password">
                     <br><br>
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Signup">
+                </form> 
+            </div>
+
+            <div class="form2" align="center">
+                <form action="php/readdb.php">
+                    <input type="submit" value="Read database">
+                </form> 
+            </div>
+
+            <div class="form2" align="center">
+                <form action="php/deldb.php">
+                    <input type="submit" value="Delete database">
                 </form> 
             </div>
 

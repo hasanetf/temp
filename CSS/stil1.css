@@ -13,3 +13,8 @@ h1 {
 	left: 50%;
 	margin-left: -50px;
 }
+
+div.form2 {
+	display:inline;
+	vertical-align:bottom;
+}
