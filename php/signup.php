@@ -18,7 +18,7 @@ if(!empty($res)){
   $count = count($res);
 }
 
-echo "Is it empty {$count}\n";
+echo "Is it empty $res  {$count}\n";
 
 if($count > 0){
   echo "User exists";
