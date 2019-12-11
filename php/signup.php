@@ -24,8 +24,10 @@ if(!empty($res)){
   $count = count($res);
 }
 
+echo "Is it empty {$count}\n";
+
 if($count > 0){
-  echo "User exist";
+  echo "User exists";
 }else{
   $query = "INSERT INTO users(username, passwrd) VALUES('$myusername', '$mypassword')";
   $db->exec($query) or die('Add user into db failed');
