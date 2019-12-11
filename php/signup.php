@@ -10,12 +10,14 @@ passwrd STRING)";
 $db->exec($query) or die('Create db failed');
 
 $myusername=$_POST['username']; 
-$mypassword=$_POST['password']; 
+$mypassword=$_POST['password'];
+$count = 0;
 
 $query = "SELECT * FROM C4users WHERE username='$myusername' and passwrd='$mypassword'";
 $res = $db->exec($query) or die('Select users from db failed');
-
-$count = count($res);
+if(!empty($res)){
+  $count = count($res);
+}
 
 if($count > 0){
   echo "User exist";
