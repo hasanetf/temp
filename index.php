@@ -36,7 +36,7 @@
                 </fieldset>
             </div>
 
-            <div class="form2" align="center">
+            <div class="wrapper">
                 <?php
                     if(isset($_GET['dbRead'])){
                         $dbRead = $_GET['dbRead'];
@@ -46,12 +46,37 @@
                     if($dbRead == 1){
                         $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
                         $statement = $db->prepare('SELECT * FROM C4users;');
-                        $query = "SELECT * FROM C4users";
                         $result = $statement->execute();
+                        echo "<table><caption> List of users </caption>   
+                            <tr>  
+                                <th> Username: </th> <th> Password </th> <th> Permission level </th>
+                            </tr> ";
 
                         while ($row = $result->fetchArray()){
-                        echo "{$row['username']}\nPasswd: {$row['passwrd']}\n";
+                            echo "<tr><td>{$row['username']}</td>
+                            <td>{$row['passwrd']}</td>
+                            <td>";
+                            
+                            switch($row['lvl']){
+                                case 0:
+                                    echo "Admin";
+                                break;
+                                case 1:
+                                    echo "Editor";
+                                break;
+                                case 2:
+                                    echo "Contributor";
+                                break;
+                                case 3:
+                                    echo "Subscriber";
+                                break;
+                                default:
+                                echo "Undefinded";
+                            }
+                            
+                            echo "</td></tr>";
                         }
+                        echo "</table>";
 
                         $db->close();
                     }
@@ -63,7 +88,7 @@
 
             <div class="form2" align="center">
                 <form action="php/deldb.php">
-                    <input type="submit" value="Delete database">
+                    <input type="submit" value="Delete tables">
                 </form> 
             </div>
 
