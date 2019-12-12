@@ -15,7 +15,7 @@ $row = $result->fetchArray() ;
 $total = $row[0];
 echo "Total number of rows " . $total;
 
-if($result > 0){
+if($total > 0){
   $_SESSION['passwrd'] = -1;
 
 }else{
