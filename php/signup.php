@@ -15,7 +15,7 @@ $result = $statement->execute();
 $row = $result->fetchArray();
 
 $total = $row[0];
-echo "Total number of rows " . $total;
+#echo "Total number of rows " . $total;
 
 if($total > 0){
   $isUser = "-1";
