@@ -21,32 +21,8 @@
             <h1 align="center" title="Name of the page">Signup <br/> page
                 <a href="top"></a>
             </h1>
-            <div class="form" align="center">
-                <fieldset>
-                <?php
-                    if(isset($_SESSION['passwrd'])){
-                            $usr = $_SESSION['passwrd'];
-                        }else{
-                            $_SESSION['passwrd'] = "0";
-                    }
-                    if ($usr == "-1"){
-                        echo "<legend>Personal information: User exists</legend>";
-
-                    }else{
-                        echo "<legend>Personal information:</legend>";
-                    }
-                ?>
-                    <form action="php/signup.php" method="post">
-                        Username:<br>
-                        <input type="text" name="username">
-                        <br>
-                        Password:<br>
-                        <input type="text" name="password">
-                        <br><br>
-                        <input type="submit" value="Signup">
-                    </form>
-                </fieldset>
-            </div>
+           
+            <?php include("php/LogReg.php")?>
 
             <div class="wrapper">
                 <?php

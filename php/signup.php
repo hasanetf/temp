@@ -28,6 +28,6 @@ if($total > 0){
   $isUser = "1";
 }
 
-$_SESSION['passwrd'] = $isUser;
+$_SESSION['isUser'] = $isUser;
 header("location:../index.php");
 ?>
