@@ -32,7 +32,14 @@
                 }
             ?>
            
-            <?php include("php/LogReg.php")?>
+            <?php if(isset($_SESSION['user'])){
+                echo '<h2 align="center">Logout</h2>';
+            }else{
+                include("php/LogReg.php");
+            }
+            ?>
+            
+            
 
             <div class="wrapper">
                 <?php
