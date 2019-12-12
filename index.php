@@ -22,15 +22,18 @@
                 <a href="top"></a>
             </h1>
             <div class="form" align="center">
-                <form action="php/signup.php">
-                    Username:<br>
-                    <input type="text" name="username">
-                    <br>
-                    Password:<br>
-                    <input type="text" name="password">
-                    <br><br>
-                    <input type="submit" value="Signup">
-                </form> 
+                <fieldset>
+                    <legend>Personal information:</legend>
+                    <form action="php/signup.php" method="post">
+                        Username:<br>
+                        <input type="text" name="username">
+                        <br>
+                        Password:<br>
+                        <input type="text" name="password">
+                        <br><br>
+                        <input type="submit" value="Signup">
+                    </form>
+                </fieldset>
             </div>
 
             <div class="form2" align="center">
