@@ -12,8 +12,8 @@ $statement->bindValue(':id1', $myusername);
 $result = $statement->execute();
 
 #$count = count($result);
-$total = $result[0];
-echo "Total number of rows " . $total;
+#$total = $result[0];
+#echo "Total number of rows " . $total;
 
 if($count > 0){
   $_SESSION['passwrd'] = -1;
@@ -28,5 +28,5 @@ if($count > 0){
 }
 
 $db->close();
-//header("location:../index.php");
+header("location:../index.php");
 ?>
