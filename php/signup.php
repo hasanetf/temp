@@ -19,7 +19,7 @@ if($count > 0){
   $_SESSION['passwrd'] = -1;
 
 }else{
-  $statement = $db->prepare("INSERT INTO C4users VALUES (NULL, 'id1','id2', 3);");
+  $statement = $db->prepare("INSERT INTO C4users VALUES (NULL, ':id1',':id2', 3);");
   $statement->bindValue(':id1', $myusername);
   $statement->bindValue(':id2', $mypassword);
   $result = $statement->execute();
