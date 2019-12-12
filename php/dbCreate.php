@@ -12,6 +12,15 @@ $query = "CREATE TABLE IF NOT EXISTS C4users (
 
 $db->exec($query) or die('Create db failed');
 
+$statement = $db->prepare("SELECT count(*) FROM C4users;");
+$result = $statement->execute();
+
+if($result < 1){
+  $statement = $db->prepare("INSERT INTO C4users VALUES (NULL, ?,?, 0);");
+  $statement->bindValue(1, 'admin', SQLITE3_TEXT);
+  $statement->bindValue(2, 'admin', SQLITE3_TEXT);
+  $result = $statement->execute();
+}
 
 $db->close();
 ?>

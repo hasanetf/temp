@@ -24,12 +24,12 @@
             <div class="form" align="center">
                 <fieldset>
                 <?php
-                    if(isset($_GET['usr'])){
-                            $usr = $_GET['usr'];
+                    if(isset($_SESSION['passwrd'])){
+                            $usr = $_SESSION['passwrd'];
                         }else{
-                            $usr = 0;
+                            $_SESSION['passwrd'] = "0";
                     }
-                    if ($usr == 1){
+                    if ($usr == "-1"){
                         echo "<legend>Personal information: User exists</legend>";
 
                     }else{
