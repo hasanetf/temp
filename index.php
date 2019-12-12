@@ -23,7 +23,19 @@
             </h1>
             <div class="form" align="center">
                 <fieldset>
-                    <legend>Personal information:</legend>
+                <?php
+                    if(isset($_GET['usr'])){
+                            $usr = $_GET['usr'];
+                        }else{
+                            $usr = 0;
+                    }
+                    if ($usr == 1){
+                        echo "<legend>Personal information: User exists</legend>";
+
+                    }else{
+                        echo "<legend>Personal information:</legend>";
+                    }
+                ?>
                     <form action="php/signup.php" method="post">
                         Username:<br>
                         <input type="text" name="username">
@@ -56,7 +68,7 @@
                             echo "<tr><td>{$row['username']}</td>
                             <td>{$row['passwrd']}</td>
                             <td>";
-                            
+
                             switch($row['lvl']){
                                 case 0:
                                     echo "Admin";

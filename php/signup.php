@@ -6,17 +6,23 @@ $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
 $myusername=$_POST['username']; 
 $mypassword=$_POST['password'];
 $count = 0;
-echo "Values are $myusername, $mypassword";
 
-$query = "SELECT * FROM C4users WHERE username='$myusername' and passwrd='$mypassword'";
-echo "QUERY 1 $query";
-$res = $db->exec($query) or die('Select users from db failed');
+$statement = $db->prepare('SELECT * FROM C4users WHERE username=:id1;');
+$statement->bindValue(':id1', $myusername);
+$result = $statement->execute();
 
-$query = "INSERT INTO C4users VALUES (NULL, '$myusername','$mypassword', 3)";
-echo "QUERY 2 $query";
-$db->exec($query) or die('Add user into db failed');
+$count = count($result);
 
+if($count > 0){
+  $db->close();
+  header("location:../index.php?usr=1");
+}else{
+  $statement = $db->prepare("INSERT INTO C4users VALUES (NULL, 'id1','id2', 3);");
+  $statement->bindValue(':id1', $myusername);
+  $statement->bindValue(':id2', $mypassword);
+  $result = $statement->execute();
+}
 
 $db->close();
-header("location:../index.php");
+header("location:../index.php?usr=0");
 ?>
