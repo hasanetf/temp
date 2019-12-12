@@ -59,10 +59,10 @@
                         $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
                         $statement = $db->prepare('SELECT * FROM C4users;');
                         $result = $statement->execute();
-                        echo "<table><caption> List of users </caption>   
+                        echo '<table id="tbl"><caption> List of users </caption>   
                             <tr>  
                                 <th> Username: </th> <th> Password </th> <th> Permission level </th>
-                            </tr> ";
+                            </tr> ';
 
                         while ($row = $result->fetchArray()){
                             echo "<tr><td>{$row['username']}</td>

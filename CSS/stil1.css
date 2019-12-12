@@ -20,10 +20,17 @@ div.form2 {
 }
 
 .wrapper {
-    text-align: center;
+	text-align: center;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
 }
 
 .button {
     position: absolute;
     top: 50%;
+}
+
+#tbl {
+	border: 3px solid green;
 }
