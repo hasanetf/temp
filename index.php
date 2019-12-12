@@ -48,8 +48,6 @@
                         $statement = $db->prepare('SELECT * FROM C4users;');
                         $query = "SELECT * FROM C4users";
                         $result = $statement->execute();
-                        echo " $result ";
-                        echo " $result[1]";
 
                         while ($row = $result->fetchArray()){
                         echo "{$row['username']}\nPasswd: {$row['passwrd']}\n";
