@@ -71,7 +71,7 @@
                         $db->close();
                     }
                 ?>
-                <div class="wrapper">
+                <div class="button_wrapper">
                     <button onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
                 </dev>
             </div>

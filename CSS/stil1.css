@@ -53,3 +53,9 @@ width:300px;
 	margin-left: -50px;
 }
 
+div.button_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
