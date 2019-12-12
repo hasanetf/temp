@@ -36,7 +36,7 @@
             if(isset($_SESSION['user'])){
                 echo '<h2 align="center">Logout</h2>';
             }else{
-                echo "{$_SESSION['user']} <br/>";
+                echo "TEST{$_SESSION['user']} <br/>";
                 include("php/LogReg.php");
             }
             ?>

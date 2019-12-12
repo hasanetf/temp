@@ -1,6 +1,6 @@
 <div class="form" align="center">
     <fieldset>
-    <legend>Personal information:</legend>";
+    <legend>Personal information:</legend>
     <div class="login">
         <h2> Login </h2>
         <form action="php/signup.php?login=1" method="post">
