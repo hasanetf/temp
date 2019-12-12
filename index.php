@@ -45,13 +45,13 @@
                     }
                     if($dbRead == 1){
                         $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
+                        $statement = $db->prepare('SELECT * FROM C4users;');
                         $query = "SELECT * FROM C4users";
-                        $res = $db->exec($query) or die('Select from users db failed');
-                        echo " $res ";
-                        echo " $res[1]";
+                        $result = $statement->execute();
+                        echo " $result ";
+                        echo " $result[1]";
 
-                        
-                        while ($row = $res->fetchArray()){
+                        while ($row = $result->fetchArray()){
                         echo "{$row['username']}\nPasswd: {$row['passwrd']}\n";
                         }
 
