@@ -25,7 +25,6 @@
             <input type="submit" value="Join now">
         </form>
     </div>
-
     <div class="join">
         <h2> Register </h2>
         <form action="php/signup.php" method="post">
