@@ -10,7 +10,7 @@ $count = 0;
 $query = "SELECT * FROM C4users WHERE username='$myusername' and passwrd='$mypassword'";
 $res = $db->exec($query) or die('Select users from db failed');
 
-$query = "INSERT INTO C4users VALUES (NULL, '$myusername', '$mypassword')";
+$query = "INSERT INTO C4users VALUES (NULL, $myusername, $mypassword)";
 $db->exec($query) or die('Add user into db failed');
 
 
