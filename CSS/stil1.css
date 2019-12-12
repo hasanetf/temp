@@ -7,16 +7,26 @@ h1 {
 	margin-left: 20px;
 }
 
-#return {
-	position:absolute;
-	bottom: 0px;
-	left: 50%;
-	margin-left: -50px;
+.button {
+    position: absolute;
+    top: 50%;
 }
+
 
 div.form2 {
 	display:inline;
 	vertical-align:bottom;
+}
+
+div.login {
+	display:inline-block;
+	width:300px;
+}
+
+div.join{
+display:inline-block;
+vertical-align:top;
+width:300px;
 }
 
 .wrapper {
@@ -25,10 +35,6 @@ div.form2 {
 	padding: 10px;
 }
 
-.button {
-    position: absolute;
-    top: 50%;
-}
 
 #tbl {
 	border: 3px solid green;
@@ -37,3 +43,11 @@ div.form2 {
 	width: 50%;
 	padding: 10px;
 }
+
+#return {
+	position:absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -50px;
+}
+
