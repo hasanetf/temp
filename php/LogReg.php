@@ -1,18 +1,6 @@
 <div class="form" align="center">
     <fieldset>
-    <?php
-        if(isset($_SESSION['isUser'])){
-                $usr = $_SESSION['isUser'];
-            }else{
-                $_SESSION['isUser'] = "0";
-        }
-        if ($usr == "-1"){
-            echo "<legend>Personal information: User exists</legend>";
-
-        }else{
-            echo "<legend>Personal information:</legend>";
-        }
-    ?>
+    <legend>Personal information:</legend>";
     <div class="login">
         <h2> Login </h2>
         <form action="php/signup.php?login=1" method="post">

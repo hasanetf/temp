@@ -32,15 +32,15 @@
                 }
             ?>
            
-            <?php if(isset($_SESSION['user'])){
+            <?php 
+            if(isset($_SESSION['user'])){
                 echo '<h2 align="center">Logout</h2>';
             }else{
+                echo "{$_SESSION['user']} <br/>";
                 include("php/LogReg.php");
             }
             ?>
             
-            
-
             <div class="wrapper">
                 <?php
                     if(isset($_GET['dbRead'])){
