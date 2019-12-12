@@ -6,6 +6,7 @@ $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
 $myusername=$_POST['username']; 
 $mypassword=$_POST['password'];
 $count = 0;
+echo "Values are $myusername, $mypassword";
 
 $query = "SELECT * FROM C4users WHERE username=$myusername and passwrd=$mypassword";
 echo "QUERY 1 $query";
