@@ -34,9 +34,20 @@
             </div>
 
             <div class="form2" align="center">
-                <form action="php/readdb.php">
-                    <input type="submit" value="Read database">
-                </form> 
+                <button onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
+                <?php
+                    if($dbRead=1){
+                        $db = new SQLite3('control4.db') or die('Unable to open database');
+                        $query = "SELECT * FROM C4users";
+                        $res = $db->exec($query) or die('Select from users db failed');
+
+                        while ($row = $res->fetchArray()){
+                        echo "{$row['username']}\nPasswd: {$row['passwrd']}\n";
+                        }
+
+                        $db->close();
+                    }
+                ?>
             </div>
 
             <div class="form2" align="center">
