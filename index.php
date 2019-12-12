@@ -72,7 +72,7 @@
                     }
                 ?>
                 <div class="wrapper">
-                    <button  align="center" onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
+                    <button onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
                 </dev>
             </div>
 
