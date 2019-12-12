@@ -18,9 +18,19 @@
             </div>
         </header>
         <div class="body_div" id="body_div">
-            <h1 align="center" title="Name of the page">Signup <br/> page
+            <h1 align="center" title="Name of the page">Raspberry Pi 3 <br/> Web Page
                 <a href="top"></a>
             </h1>
+
+            <?php
+                if(isset($_SESSION['isUser'])){               
+                    if ($_SESSION['isUser'] == "-1"){
+                        echo '<h2 align="center">Username is taken</h2>';
+                    }else{
+                        echo '<h2 align="center">Registration is succsessful</h2>';
+                    }
+                }
+            ?>
            
             <?php include("php/LogReg.php")?>
 
