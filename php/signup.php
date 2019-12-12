@@ -1,7 +1,7 @@
 <?php
 @session_start();
 
-$db = new SQLite3('control4.db') or die('Unable to open database');
+$db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
 
 $myusername=$_POST['username']; 
 $mypassword=$_POST['password'];
