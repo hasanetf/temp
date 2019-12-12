@@ -60,8 +60,10 @@
                         $statement = $db->prepare('SELECT * FROM C4users;');
                         $result = $statement->execute();
                         echo '<table id="tbl"><caption> List of users </caption>   
-                            <tr>  
-                                <th> Username: </th> <th> Password </th> <th> Permission level </th>
+                            <tr id="tbl">  
+                                <th id="tbl"> Username </th> 
+                                <th id="tbl"> Password </th> 
+                                <th id="tbl"> Permission level </th>
                             </tr> ';
 
                         while ($row = $result->fetchArray()){
