@@ -20,10 +20,7 @@ div.form2 {
 }
 
 .wrapper {
-	display: inline-block;
-	width: 500px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto;
 	width: 50%;
 	padding: 10px;
 }
@@ -36,4 +33,7 @@ div.form2 {
 #tbl {
 	border: 3px solid green;
 	text-align: center;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
 }
