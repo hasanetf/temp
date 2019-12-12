@@ -19,9 +19,9 @@ if($count > 0){
   $_SESSION['passwrd'] = -1;
 
 }else{
-  $statement = $db->prepare("INSERT INTO C4users VALUES (NULL, ':myusername',':mypassword', 3);");
-  $statement->bindValue(':myusername', $myusername);
-  $statement->bindValue(':mypassword', $mypassword);
+  $statement = $db->prepare("INSERT INTO C4users VALUES (NULL, ?,?, 3);");
+  $statement->bindValue(1, $myusername, SQLITE3_TEXT);
+  $statement->bindValue(2, $mypassword, SQLITE3_TEXT);
   $result = $statement->execute();
   $_SESSION['passwrd'] = "-1";
   $_SESSION['username'] = "-1";
