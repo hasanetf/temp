@@ -20,10 +20,11 @@ div.form2 {
 }
 
 .wrapper {
-	display: block;
+	display: inline-block;
+	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 70%;
+	width: 50%;
 	padding: 10px;
 }
 
