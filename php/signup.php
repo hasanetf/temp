@@ -10,7 +10,9 @@ $statement = $db->prepare('SELECT count(*) FROM C4users WHERE username=?;');
 $statement->bindValue(1, $myusername, SQLITE3_TEXT);
 $result = $statement->execute();
 
-$total = $result[0];
+$row = $result->fetchArray() ;
+
+$total = $row[0];
 echo "Total number of rows " . $total;
 
 if($result > 0){
