@@ -8,9 +8,10 @@ h1 {
 }
 
 .button {
-	margin: auto;
-	width: 50%;
-	padding: 10px;
+	position:absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -50px;
 }
 
 
