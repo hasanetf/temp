@@ -25,7 +25,7 @@
             <?php
                 if(isset($_SESSION['isUser'])){               
                     if ($_SESSION['isUser'] == "-1"){
-                        echo '<h2 align="center">Username is taken</h2>';
+                        echo '<h2 align="center">Incorrect login <br/>Username is taken</h2>';
                     }else{
                         echo '<h2 align="center">Registration is succsessful</h2>';
                     }

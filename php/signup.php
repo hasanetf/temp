@@ -8,17 +8,18 @@ $isUser = "0";
 $myusername=$_POST['username']; 
 $mypassword=$_POST['password'];
 
-
-$statement = $db->prepare('SELECT count(*) FROM C4users WHERE username=?;');
-$statement->bindValue(1, $myusername, SQLITE3_TEXT);
-$result = $statement->execute();
-
-$row = $result->fetchArray();
-
-$total = $row[0];
 #echo "Total number of rows " . $total;
 
 if(isset($_GET['login'])){
+
+  $statement = $db->prepare('SELECT count(*) FROM C4users WHERE username=? and passwrd=?;');
+  $statement->bindValue(1, $myusername, SQLITE3_TEXT);
+  $statement->bindValue(2, $mypassword, SQLITE3_TEXT);
+  $result = $statement->execute();
+
+  $row = $result->fetchArray();
+
+  $total = $row[0];
   if($total > 0){
     $_SESSION['user'] = $row['username'];
     $_SESSION['passwrd'] = $row['passwrd'];
@@ -28,6 +29,12 @@ if(isset($_GET['login'])){
   }
  
 }elseif(isset($_GET['reg'])){
+
+  $statement = $db->prepare('SELECT count(*) FROM C4users WHERE username=?;');
+  $statement->bindValue(1, $myusername, SQLITE3_TEXT);
+  $result = $statement->execute();
+
+  $row = $result->fetchArray();
   if($total > 0){
     $isUser = "-1";
   
