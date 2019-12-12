@@ -35,11 +35,13 @@
 
             <div class="form2" align="center">
                 <?php
+                    echo "TEST \n";
+                    echo "DB READ: $dbRead \n";
                     if($dbRead == 1){
                         $db = new SQLite3('control4.db') or die('Unable to open database');
                         $query = "SELECT * FROM C4users";
                         $res = $db->exec($query) or die('Select from users db failed');
-                        echo "TEST";
+                        
                         while ($row = $res->fetchArray()){
                         echo "{$row['username']}\nPasswd: {$row['passwrd']}\n";
                         }
@@ -47,7 +49,9 @@
                         $db->close();
                     }
                 ?>
-                <button  align="center" onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
+                <div class="wrapper">
+                    <button  align="center" onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
+                </dev>
             </div>
 
             <div class="form2" align="center">

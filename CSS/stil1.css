@@ -18,3 +18,12 @@ div.form2 {
 	display:inline;
 	vertical-align:bottom;
 }
+
+.wrapper {
+    text-align: center;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+}
