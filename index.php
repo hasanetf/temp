@@ -47,7 +47,7 @@
                         $db->close();
                     }
                 ?>
-                <button onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
+                <button  align="center" onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
             </div>
 
             <div class="form2" align="center">
