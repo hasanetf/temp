@@ -36,7 +36,7 @@
                       </td>
                       <td >
                           <ul>
-                              <a href="php/deldb.php">
+                              <a href="deldb.php">
                                   <li>Delete all users</li>
                               </a>
                           </ul>
