@@ -5,6 +5,9 @@ body {
 a:link {
 	color:inherit;
 }
+a:visited{
+	color:inherit;
+}
   
 h1 {
 	color: navy;
@@ -77,7 +80,8 @@ div.button_wrapper {
 }
 
 #nav table {
-	border-spacing:0px; 
+	border: 3px solid white;
+	border-spacing:3px; 
 	top:0;
 	text-align: center;
 	margin-left: auto;    /*   These are the    */
