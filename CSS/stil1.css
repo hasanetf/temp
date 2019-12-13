@@ -94,24 +94,29 @@ margin-right: auto; /* important lines! */
 	}
 
 #nav td:hover{
+	display:block;
 	background:rgb(228, 10, 10);
+	margin-left: auto;    /*   These are the    */
+	margin-right: auto; /* important lines! */
 	width:240px;
 	height:24px; 
 }
 	
-#nav td:hover ul.a1 {
+#nav ul.a1:hover {
 	display:block;
 	width:240px;
 	background-color:rgb(34, 178, 53);
 	z-index:10;
-	left:246px;
-	top:52px;
-	text-align:left;
+	margin-left: auto;    /*   These are the    */
+	margin-right: auto; /* important lines! */
+	text-align:center;
 }
 
 #nav ul{
-list-style: none;
-border: 2px solid #000000;
+	margin-left: auto;    /*   These are the    */
+	margin-right: auto; /* important lines! */
+	list-style: none;
+	border: 2px solid #000000;
 }
 
 #nav ul.tab1 {
