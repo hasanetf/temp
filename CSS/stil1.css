@@ -66,6 +66,7 @@ border: 0px;
 }
 
 #nav {
+display:block;
 align-items: center;
 justify-content: center;
 height: 149px;
