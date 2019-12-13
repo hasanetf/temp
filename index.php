@@ -42,67 +42,7 @@
             }
             ?>
             
-            <div class="wrapper">
-                <?php
-                    if(isset($_GET['dbRead'])){
-                        $dbRead = $_GET['dbRead'];
-                    }else{
-                        $dbRead = 0;
-                    }
-                    if($dbRead == 1){
-                        $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
-                        $statement = $db->prepare('SELECT * FROM C4users;');
-                        $result = $statement->execute();
-                        echo '<table id="tbl"><caption> List of users </caption>   
-                            <tr id="tbl">  
-                                <th id="tbl"> Username </th> 
-                                <th id="tbl"> Password </th> 
-                                <th id="tbl"> Permission level </th>
-                            </tr> ';
-
-                        while ($row = $result->fetchArray()){
-                            echo "<tr><td>{$row['username']}</td>
-                            <td>{$row['passwrd']}</td>
-                            <td>";
-
-                            switch($row['lvl']){
-                                case 0:
-                                    echo "Admin";
-                                break;
-                                case 1:
-                                    echo "Editor";
-                                break;
-                                case 2:
-                                    echo "Contributor";
-                                break;
-                                case 3:
-                                    echo "Subscriber";
-                                break;
-                                default:
-                                echo "Undefinded";
-                            }
-                            
-                            echo "</td></tr>";
-                        }
-                        echo "</table>";
-
-                        $db->close();
-                    }
-                ?>
-                <div class="button_wrapper">
-                    <button onclick="window.location.href = 'index.php?dbRead=1';">Read users</button>
-                </dev>
-            </div>
-
-            <div class="form2" align="center">
-                <form action="php/deldb.php">
-                    <input type="submit" value="Delete tables">
-                </form> 
-            </div>
-
-
-            <p align="center"><a href="secondPage.php">Next page</a></p>
-            <p align="center"><a href="https://google.com/">Google</a></p>
+            <p id=return><a href="https://google.com/">Google</a></p>
             <p  id=return><a href="#top">Top of the page</a></p>
         </div>
     </div>
