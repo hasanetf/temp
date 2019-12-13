@@ -82,10 +82,10 @@ div.button_wrapper {
 #nav table {
 	border: 3px solid rgb(16, 0, 245);
 	border-spacing:0px; 
-	top:0;
 	text-align: center;
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
+	height:24px; 
 	padding: 10px;
 }
 
@@ -98,7 +98,7 @@ div.button_wrapper {
 }
 
 #nav td:hover{
-	background:black;
+	background:rgb(119, 119, 119);
 	text-align:center;
 	width:300px;
 	height:24px; 
