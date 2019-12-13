@@ -13,7 +13,18 @@
 
     foreach($files as $value){
         if($value != "."){
-            echo "<tr><td>".$value."</td></tr>";
+            echo "<tr>";
+
+            if(is_dir($value)){
+                echo '<a href="updatePath.php?dir='.$value.'">';
+            }
+
+            echo "<td>".$value."</td>";
+
+            if(is_dir($value)){
+                echo '</a>';
+            }
+            echo "</tr>";
         }  
     }
     echo "</table>";
