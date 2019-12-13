@@ -66,8 +66,9 @@ border: 0px;
 }
 
 #nav {
-position:relative;
-left: 0;
+display: flex;
+align-items: center;
+justify-content: center;
 height: 149px;
 width: 980px;
 margin: 0 0 0 0;
