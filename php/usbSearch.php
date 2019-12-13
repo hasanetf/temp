@@ -48,22 +48,7 @@
             </div>
 
             <div class="wrapper"> 
-                <?php
-                    $dir    = '/mnt/sda1';
-                    $files1 = scandir($dir);
-                    echo '<table id="tbl"><caption> USB Flash Drive Contents </caption>   
-                    <tr id="tbl">  
-                        <th id="tbl"> Path </th>
-                    </tr> ';
-
-                    foreach($files1 as $value){
-                        echo "DIR ".$value."<br/>";
-                    }
-
-                    $files1 = scandir($dir, 2);
-                    foreach($files1 as $value){
-                        echo "DIR ".$value."<br/>";
-                    }
+                <?php include("brwFiles.php");
                 ?>
             </div>
             <p  id=return><a href="#top">Top of the page</a></p>
