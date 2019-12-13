@@ -29,7 +29,7 @@
                   <tr>
                       <td>
                           <ul> 
-                            <a href="php/usrManage.php?dbRead=1">
+                            <a href="usrManage.php?dbRead=1">
                               <li>List all users</li>
                             </a>
                           </ul>
@@ -95,7 +95,6 @@
                     }
                 ?>
 
-            <p id=return><a href="https://google.com/">Google</a></p>
             <p  id=return><a href="#top">Top of the page</a></p>
           <?php
             }

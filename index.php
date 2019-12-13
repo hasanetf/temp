@@ -42,7 +42,6 @@
             }
             ?>
             
-            <p id=return><a href="https://google.com/">Google</a></p>
             <p  id=return><a href="#top">Top of the page</a></p>
         </div>
     </div>
