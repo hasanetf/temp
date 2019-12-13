@@ -55,6 +55,14 @@ width:300px;
 	padding: 10px;
 }
 
+#usbtbl {
+	border: 3px solid rgb(48, 48, 48);
+	text-align: left;
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+}
+
 #return {
 	position:absolute;
 	bottom: 0px;
