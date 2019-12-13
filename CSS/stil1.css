@@ -100,10 +100,9 @@ margin-right: auto; /* important lines! */
 }
 	
 #nav td:hover ul.a1 {
-	position:absolute;
 	display:block;
 	width:240px;
-	background-color:#B22222;
+	background-color:rgb(34, 178, 53);
 	z-index:10;
 	left:246px;
 	top:52px;
@@ -116,6 +115,8 @@ border: 2px solid #000000;
 }
 
 #nav ul.tab1 {
+	margin-left: auto;    /*   These are the    */
+	margin-right: auto; /* important lines! */
 	list-style: none;
 	border: 0px;
 	height:24px;
