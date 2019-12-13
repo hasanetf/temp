@@ -15,7 +15,7 @@
     $files = scandir($dir);
 
     foreach($files as $value){
-        echo "<tr><td>".$value."<td><tr>";
+        echo "<tr><td>".$value."</td></tr>";
     }
     echo "</table>";
 
