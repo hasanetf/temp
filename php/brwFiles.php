@@ -14,17 +14,17 @@
     foreach($files as $value){
         if($value != "."){
             $b = $dir."/".$value;
+            $detDir = is_dir($b);
             echo "<tr>";
-            $bool_val = is_dir($b);
-            echo $bool_val ? '<td>true</td>' : '<td>false</td>';
-
-            if(is_dir($b)){
+            if($detDir){
                 echo '<a href="updatePath.php?dir='.$value.'">';
             }
-            echo "<td>".$value."</td>";
-
-            if(is_dir($b)){
-                echo '</a>';
+            echo "<td>";
+            if($detDir){
+                echo '<a href="updatePath.php?dir='.$value.'">';
+                echo $value."</a></td>";
+            }else{
+                echo $value."</td>";
             }
             echo "</tr>";
         }  
