@@ -51,14 +51,19 @@
                 <?php
                     $dir    = '/mnt/sda1';
                     $files1 = scandir($dir);
+                    echo '<table id="tbl"><caption> USB Flash Drive Contents </caption>   
+                    <tr id="tbl">  
+                        <th id="tbl"> Path </th>
+                    </tr> ';
+
                     foreach($files1 as $value){
                         echo "DIR ".$value."<br/>";
                     }
 
-                    $files2 = scandir($dir, 1);
-
-                    print_r($files1);
-                    print_r($files2);
+                    $files1 = scandir($dir, 1);
+                    foreach($files1 as $value){
+                        echo "DIR ".$value."<br/>";
+                    }
                 ?>
             </div>
             <p  id=return><a href="#top">Top of the page</a></p>
