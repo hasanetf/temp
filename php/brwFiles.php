@@ -15,13 +15,13 @@
         if($value != "."){
             echo "<tr>";
 
-            if(is_dir($value)){
+            if(is_dir($dir."/".$value)){
                 echo '<a href="updatePath.php?dir='.$value.'">';
             }
 
             echo "<td>".$value."</td>";
 
-            if(is_dir($value)){
+            if(is_dir($dir."/".$value)){
                 echo '</a>';
             }
             echo "</tr>";
