@@ -77,10 +77,6 @@ margin-left: auto;    /*   These are the    */
 margin-right: auto; /* important lines! */
 }
 
-#nav a:hover {
-color: #8370ff;
-background: black;
-}
 
 #nav ul{
 list-style: none;
