@@ -51,6 +51,10 @@
                 <?php
                     $dir    = '/mnt/sda1';
                     $files1 = scandir($dir);
+                    foreach($files1 as $value){
+                        echo "DIR ".$value."<br/>";
+                    }
+
                     $files2 = scandir($dir, 1);
 
                     print_r($files1);
