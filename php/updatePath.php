@@ -22,5 +22,5 @@
             }
         }
     }
-    header("location:brwFiles.php");
+    header("location:usbSearch.php");
 ?>
