@@ -34,7 +34,7 @@
            
             <?php 
             if(isset($_SESSION['user'])){
-                include("html/LogReg.html");
+                include("html/logout.html");
             }else{
                 include("php/LogReg.php");
             }
