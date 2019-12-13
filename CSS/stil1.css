@@ -59,11 +59,6 @@ div.button_wrapper {
 	justify-content: center;
 }
 
-ul.tab1 
-{
-list-style: none;
-border: 0px;
-}
 
 #nav {
 display:block;
@@ -77,10 +72,47 @@ margin-left: auto;    /*   These are the    */
 margin-right: auto; /* important lines! */
 }
 
+#nav table {
+	position:block;
+	border-spacing:0px; 
+	top:0;
+	margin-left: auto;    /*   These are the    */
+	margin-right: auto; /* important lines! */
+}
+
+#nav td{
+	width:240px;
+	height:24px; 
+	color: white;
+	text-align:center;
+	z-index:10;
+	transition: all 2s ease;
+	}
+
+#nav td:hover{
+	background:black;
+}
+	
+#nav td:hover ul.a1 {
+	position:absolute;
+	display:block;
+	width:240px;
+	background-color:#B22222;
+	z-index:10;
+	left:246px;
+	top:52px;
+	text-align:left;
+}
 
 #nav ul{
 list-style: none;
 border: 2px solid #000000;
+}
+
+#nav ul.tab1 {
+	list-style: none;
+	border: 0px;
+	height:24px;
 }
 
 #nav li {
@@ -88,56 +120,27 @@ width:239px;
 border: 1px solid #000000;
 }
 
-#nav ul.tab1 {
-height:24px;
+#nav li:hover {
+	background: black;
+	transition: all 0.9s ease;
 }
+	
 
 #nav li.tab1 {
 height:24px;
 }
 
-#nav li:hover {
-background: black;
-transition: all 0.9s ease;
-}
 #nav li.b2 {
-width:237px;
-border: 1px solid #000000;
-}
-#nav table {
-position:block;
-border-spacing:0px; 
-top:0;
+	display:none;
+	width:240px;
+	border: 1px solid #000000;
 }
 
 ul.a1 {
 display:none;
 }
 
-#nav td{
-width:240px;
-height:24px; 
-background-color:#8370ff; 
-text-align:center;
-z-index:10;
-transition: all 2s ease;
-}
 
-#nav td:hover ul.a1 {
-display:block;
-width:239px;
-position:absolute;
-background-color:#B22222;
-z-index:10;
-left:246px;
-top:26px;
-text-align:left;
-}
 
-#nav td:hover{
-background:black;
-}
 
-ul.b2 {
-display:none;
-}
+
