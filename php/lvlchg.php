@@ -3,6 +3,7 @@
 
 $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
 
+echo "TEST".$_GET['lvl'].$_GET['id'];
 
 #echo "Total number of rows " . $total;
 if($_SESSION['lvl']==0){
@@ -32,5 +33,5 @@ if($_SESSION['lvl']==0){
     }
 }
 
-header("location:usrManage.php?dbRead=1");
+#header("location:usrManage.php?dbRead=1");
 ?>
