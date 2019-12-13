@@ -69,11 +69,11 @@ border: 0px;
 display:block;
 align-items: center;
 justify-content: center;
-height: 149px;
-width: 980px;
-margin: 0 0 0 0;
+height: 50px;
 background: #117848;
 background: url(../bg-header.jpg);
+margin-left: auto;    /*   These are the    */
+margin-right: auto; /* important lines! */
 }
 
 #nav a:hover {
