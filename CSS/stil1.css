@@ -70,7 +70,7 @@ display:block;
 align-items: center;
 justify-content: center;
 height: 50px;
-widows: 1000px;
+width: 900px;
 background: #117848;
 background: url(../bg-header.jpg);
 margin-left: auto;    /*   These are the    */
