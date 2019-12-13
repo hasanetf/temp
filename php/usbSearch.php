@@ -47,8 +47,16 @@
               </table>
             </div>
 
-            <div class="wrapper">
-            
+            <div class="wrapper"> 
+                <?php
+                    $dir    = '/mnt/sda1';
+                    $files1 = scandir($dir);
+                    $files2 = scandir($dir, 1);
+
+                    print_r($files1);
+                    print_r($files2);
+                ?>
+            </div>
             <p  id=return><a href="#top">Top of the page</a></p>
         </div>
     </div>
