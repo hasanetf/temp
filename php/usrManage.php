@@ -13,7 +13,7 @@
     <div class="main_div" id="div1">
         <header> 
             <div class="logo" id="logo" align="center">
-                <img src="control4.png" />
+                <img src="../control4.png" />
             </div>
         </header>
         <div class="body_div" id="body_div">
@@ -63,6 +63,8 @@
                                 <th id="tbl"> Username </th> 
                                 <th id="tbl"> Password </th> 
                                 <th id="tbl"> Permission level </th>
+                                <th id="tbl"> Level up </th>
+                                <th id="tbl"> Level down </th>
                             </tr> ';
 
                         while ($row = $result->fetchArray()){
@@ -86,8 +88,8 @@
                                 default:
                                 echo "Undefinded";
                             }
-                            
-                            echo "</td></tr>";
+                            echo "</td><a href='lvlchg.php?lvl=+'><td>{$row['passwrd']}</td></a>";
+                            echo "<a href='lvlchg.php?lvl=+'><td>{$row['passwrd']}</td></a></tr>";
                         }
                         echo "</table>";
 
