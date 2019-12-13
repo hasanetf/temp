@@ -80,8 +80,8 @@ div.button_wrapper {
 	border-spacing:0px; 
 	top:0;
 	text-align: center;
-	margin: auto;
-	width: 50%;
+	margin-left: auto;    /*   These are the    */
+	margin-right: auto; /* important lines! */
 	padding: 10px;
 }
 
@@ -91,7 +91,6 @@ div.button_wrapper {
 	height:24px; 
 	color: white;
 	text-align:center;
-	z-index:10;
 	transition: all 2s ease;
 }
 
