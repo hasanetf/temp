@@ -100,20 +100,16 @@ margin-right: auto; /* important lines! */
 	display:block;
 	background:rgb(228, 10, 10);
 	text-align:center;
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	width:240px;
 	height:24px; 
 }
 
 ul.A1{
-	display:block;
 	border: 2px solid white;
 	text-align:center;
 }
 	
 ul.A1:hover {
-	display:block;
 	background-color:rgb(34, 178, 53);
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
@@ -123,7 +119,6 @@ ul.A1:hover {
 }
 
 ul.A2{
-	display:block;
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
 	border: 2px solid white;
@@ -131,7 +126,6 @@ ul.A2{
 }
 	
 ul.A2:hover {
-	display:block;
 	background-color:rgb(34, 178, 53);
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
@@ -141,7 +135,6 @@ ul.A2:hover {
 }
 
 ul.B1{
-	display:block;
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
 	border: 2px solid white;
@@ -149,7 +142,6 @@ ul.B1{
 }
 	
 ul.B1:hover {
-	display:block;
 	background-color:rgb(34, 178, 53);
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
@@ -159,7 +151,6 @@ ul.B1:hover {
 }
 
 ul.B2{
-	display:block;
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
 	border: 2px solid white;
@@ -167,7 +158,6 @@ ul.B2{
 }
 	
 ul.B2:hover {
-	display:block;
 	background-color:rgb(34, 178, 53);
 	margin-left: auto;    /*   These are the    */
 	margin-right: auto; /* important lines! */
