@@ -36,7 +36,7 @@
             if(isset($_SESSION['user'])){
 
                echo '<div class="button_wrapper">
-                        <button onclick="window.location.href = "php/logout.php";">
+                        <button onclick="window.location.href = "php/logout.php">
                             Logout
                         </button>
                     </dev>';
