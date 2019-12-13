@@ -64,7 +64,7 @@ div.button_wrapper {
 display:block;
 align-items: center;
 justify-content: center;
-height: 50px;
+height: 100px;
 width: 900px;
 background: #117848;
 background: url(../bg-header.jpg);
@@ -117,7 +117,7 @@ border: 2px solid #000000;
 
 #nav li {
 width:239px;
-border: 1px solid #000000;
+border: 1px solid white;
 }
 
 #nav li:hover {
