@@ -94,7 +94,6 @@ div.button_wrapper {
 }
 
 #nav td:hover{
-	display:block;
 	background:rgb(228, 10, 10);
 	text-align:center;
 	width:240px;
@@ -102,7 +101,7 @@ div.button_wrapper {
 }
 
 ul.A1{
-	border: 2px solid white;
+	border: 2px solid rgb(22, 33, 189);
 	text-align:center;
 }
 	
