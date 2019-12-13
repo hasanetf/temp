@@ -22,7 +22,5 @@
             }
         }
     }
-
-
     header("location:brwFiles.php");
 ?>

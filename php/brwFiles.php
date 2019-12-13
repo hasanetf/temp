@@ -20,16 +20,14 @@
             $b = $dir."/".$value;
             $detDir = is_dir($b);
             if($value == ".."){
-                $value = "-1";
+                $valueA = "-1";
+            }else{
+                $valueA = $value; 
             }
 
-            echo "<tr>";
+            echo "<tr><td>";
             if($detDir){
-                echo '<a href="updatePath.php?dir='.$value.'">';
-            }
-            echo "<td>";
-            if($detDir){
-                echo '<a href="updatePath.php?dir='.$value.'">';
+                echo '<a href="updatePath.php?dir='.$valueA.'">';
                 echo $value."</a></td>";
             }else{
                 echo $value."</td>";
