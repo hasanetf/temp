@@ -94,7 +94,9 @@ margin-right: auto; /* important lines! */
 	}
 
 #nav td:hover{
-	background:black;
+	background:rgb(228, 10, 10);
+	width:240px;
+	height:24px; 
 }
 	
 #nav td:hover ul.a1 {
