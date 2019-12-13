@@ -14,7 +14,7 @@ if($_SESSION['lvl']==0){
         $result = $statement->execute();
         $row = $result->fetchArray();
 
-        if($_GET['lvl'] == "+"){
+        if($_GET['lvl'] == "1"){
             if($row['lvl'] > 0){
                 $statement = $db->prepare('UPDATE C4users SET lvl=? WHERE id=?;');
                 $statement->bindValue(1, $row['lvl'] - 1, SQLITE3_INTEGER);
@@ -22,7 +22,7 @@ if($_SESSION['lvl']==0){
                 $result = $statement->execute();
             }
 
-        }elseif($_GET['lvl'] == "-"){
+        }elseif($_GET['lvl'] == "2"){
             if($row['lvl'] < 3){
                 $statement = $db->prepare('UPDATE C4users SET lvl=? WHERE id=?;');
                 $statement->bindValue(1, $row['lvl'] + 1, SQLITE3_INTEGER);

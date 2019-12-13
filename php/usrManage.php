@@ -89,8 +89,8 @@
                                 echo "Undefinded";
                             }
                             $usrID = $row['id'];
-                            echo '</td><td><a href="lvlchg.php?lvl=+&id='.$usrID.'">+</a></td>';
-                            echo '<td><a href="lvlchg.php?lvl=-&id='.$usrID.'">-</a></td></tr>';
+                            echo '</td><td><a href="lvlchg.php?lvl=1&id='.$usrID.'">+</a></td>';
+                            echo '<td><a href="lvlchg.php?lvl=2&id='.$usrID.'">-</a></td></tr>';
                         }
                         echo "</table>";
 
