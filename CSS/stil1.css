@@ -90,8 +90,6 @@ margin-right: auto; /* important lines! */
 	height:24px; 
 	color: white;
 	text-align:center;
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	z-index:10;
 	transition: all 2s ease;
 }
@@ -111,56 +109,42 @@ ul.A1{
 	
 ul.A1:hover {
 	background-color:rgb(34, 178, 53);
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	text-align:center;
 	list-style: none;
 	z-index:10;
 }
 
 ul.A2{
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	border: 2px solid white;
 	text-align:center;
 }
 	
 ul.A2:hover {
 	background-color:rgb(34, 178, 53);
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	text-align:center;
 	list-style: none;
 	z-index:10;
 }
 
 ul.B1{
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	border: 2px solid white;
 	text-align:center;
 }
 	
 ul.B1:hover {
 	background-color:rgb(34, 178, 53);
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	text-align:center;
 	list-style: none;
 	z-index:10;
 }
 
 ul.B2{
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	border: 2px solid white;
 	text-align:center;
 }
 	
 ul.B2:hover {
 	background-color:rgb(34, 178, 53);
-	margin-left: auto;    /*   These are the    */
-	margin-right: auto; /* important lines! */
 	text-align:center;
 	list-style: none;
 	z-index:10;
