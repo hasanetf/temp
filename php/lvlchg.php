@@ -33,5 +33,5 @@ if($_SESSION['lvl']==0){
     }
 }
 
-#header("location:usrManage.php?dbRead=1");
+header("location:usrManage.php?dbRead=1");
 ?>
