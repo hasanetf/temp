@@ -71,7 +71,7 @@ div.button_wrapper {
 	display:block;
 	align-items: center;
 	justify-content: center;
-	height: 100px;
+	height: 48px;
 	width: 900px;
 	background: #117848;
 	background: url(../bg-header.jpg);
@@ -100,6 +100,6 @@ div.button_wrapper {
 #nav td:hover{
 	background:black;
 	text-align:center;
-	width:240px;
+	width:300px;
 	height:24px; 
 }
