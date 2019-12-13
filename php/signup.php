@@ -21,6 +21,14 @@ if(isset($_GET['login'])){
 
   $total = $row[0];
   if($total > 0){
+
+    $statement = $db->prepare('SELECT * FROM C4users WHERE username=? and passwrd=?;');
+    $statement->bindValue(1, $myusername, SQLITE3_TEXT);
+    $statement->bindValue(2, $mypassword, SQLITE3_TEXT);
+    $result = $statement->execute();
+  
+    $row = $result->fetchArray();
+
     $_SESSION['user'] = $row['username'];
     $_SESSION['passwrd'] = $row['passwrd'];
     $_SESSION['lvl'] = $row['lvl'];
