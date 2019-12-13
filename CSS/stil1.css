@@ -105,10 +105,11 @@ width:237px;
 border: 1px solid #000000;
 }
 #nav table {
-position:absolute;
+position:block;
 border-spacing:0px; 
 top:0;
 }
+
 ul.a1 {
 display:none;
 }
