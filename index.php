@@ -34,7 +34,12 @@
            
             <?php 
             if(isset($_SESSION['user'])){
-                echo '<h2 align="center">Logout</h2>';
+
+               echo '<div class="button_wrapper">
+                        <button onclick="window.location.href = "php/logout.php";">
+                            Logout
+                        </button>
+                    </dev>';
             }else{
                 include("php/LogReg.php");
             }
