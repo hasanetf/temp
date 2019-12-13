@@ -25,8 +25,10 @@
             <?php
                 if(isset($_SESSION['isUser'])){               
                     if ($_SESSION['isUser'] == "-1"){
-                        echo '<h2 align="center">Incorrect login <br/>Username is taken</h2>';
-                    }else{
+                        echo '<h2 align="center">Username is taken</h2>';
+                    }elseif ($_SESSION['isUser'] == "-2"){
+                        echo '<h2 align="center">Incorrect username or password </h2>';
+                    }elseif ($_SESSION['isUser'] == "1"){
                         echo '<h2 align="center">Registration is succsessful</h2>';
                     }
                 }
@@ -34,7 +36,7 @@
            
             <?php 
             if(isset($_SESSION['user'])){
-                include("html/logout.html");
+                include("html/header.html");
             }else{
                 include("php/LogReg.php");
             }

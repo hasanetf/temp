@@ -33,7 +33,7 @@ if(isset($_GET['login'])){
     $_SESSION['passwrd'] = $row['passwrd'];
     $_SESSION['lvl'] = $row['lvl'];
   }else{
-    $isUser = "-1";
+    $isUser = "-2";
   }
  
 }elseif(isset($_GET['reg'])){
