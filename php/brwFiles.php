@@ -13,15 +13,16 @@
 
     foreach($files as $value){
         if($value != "."){
+            $b = $dir."/".$value;
             echo "<tr>";
 
-            if(is_dir($dir."/".$value)){
+            if(is_dir($b)){
                 echo '<a href="updatePath.php?dir='.$value.'">';
             }
-
+            echo "<td>".$dir."/".$value."</td>";
             echo "<td>".$value."</td>";
 
-            if(is_dir($dir."/".$value)){
+            if(is_dir($b)){
                 echo '</a>';
             }
             echo "</tr>";
