@@ -60,7 +60,7 @@
                         echo "DIR ".$value."<br/>";
                     }
 
-                    $files1 = scandir($dir, 1);
+                    $files1 = scandir($dir, 4);
                     foreach($files1 as $value){
                         echo "DIR ".$value."<br/>";
                     }
