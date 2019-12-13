@@ -1,6 +1,10 @@
 body {
 	background-color: rgb(238, 238, 238);
 }
+
+a:link {
+	color:inherit;
+}
   
 h1 {
 	color: navy;
