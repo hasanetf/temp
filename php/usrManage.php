@@ -88,8 +88,8 @@
                                 default:
                                 echo "Undefinded";
                             }
-                            echo "</td><a href='lvlchg.php?lvl=+'><td>{$row['passwrd']}</td></a>";
-                            echo "<a href='lvlchg.php?lvl=+'><td>{$row['passwrd']}</td></a></tr>";
+                            echo '</td><a href="lvlchg.php?lvl=+"><td>+</td></a>';
+                            echo '<a href="lvlchg.php?lvl=+"><td>-</td></a></tr>';
                         }
                         echo "</table>";
 
