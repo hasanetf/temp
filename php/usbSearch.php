@@ -43,7 +43,7 @@
                     <?php
                         }
                         
-                        if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 2){
+                        if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
                     ?>
                       <td >
                           <ul>
