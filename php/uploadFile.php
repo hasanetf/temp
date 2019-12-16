@@ -5,7 +5,7 @@ $dir_access = $_SESSION['cur_path'];
 
 $dir_access = explode('/mnt/sda1/', $dir);
 
-$dir = "usb/";
+$dir = "../usb/";
 
 if($dir_access[1] != ""){
     $dir = $dir.$dir_access[1]."/";
