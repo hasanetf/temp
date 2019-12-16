@@ -33,7 +33,7 @@
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
                 echo $value."</a></td>";
             }else{
-                echo '<img src="../file.jpg"  width="30" height="30" />';
+                echo '<img src="../file.png"  width="30" height="30" />';
                 echo "</td><td>";
                 echo $value."</td>";
             }
