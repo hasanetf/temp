@@ -3,8 +3,9 @@
 
 $dir    = '/mnt/sda1/test/test2/test3';
 
+$dir_array = explode('/mnt/sda1/', $dir);
 
-print_r(explode('/mnt/sda1/', $dir));
+echo $dir_array[1];
 
 
 ?>
