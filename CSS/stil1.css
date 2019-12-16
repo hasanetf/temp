@@ -41,11 +41,12 @@ width:300px;
 }
 
 #upload{
+	border: 3px solid rgb(48, 48, 48);
 	position: relative;
 	z-index: 1;
-	width: 50%;
-	margin-left: auto;   
-	margin-right: auto; 
+	width: 300px;
+	left: 50%;
+	margin-left: -150px;   
 }
 
 .wrapper {
