@@ -7,5 +7,5 @@ $dir    = '/mnt/sda1/test';
 print_r(explode('|', $dir, 2));
 
 // negative limit (since PHP 5.1)
-print_r(explode('|', $str, -2));
+print_r(explode('|', $dir, -2));
 ?>
