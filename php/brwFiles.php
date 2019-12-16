@@ -3,7 +3,7 @@
     $dir    = '/mnt/sda1';
     echo '<table id="usbtbl">';
 
-    if(!isset($_SESSION['def_path'])){
+    if(!isset( $_SESSION['def_path'])){
         $_SESSION['def_path'] = $dir;
     }
 
