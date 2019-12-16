@@ -17,5 +17,6 @@ foreach ($subdir as $value) {
     $new_dir = $new_dir."/".$value;
 }
 
+echo $new_dir;
 
 ?>
