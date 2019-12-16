@@ -11,10 +11,12 @@ $subdir = explode('/', $dir, -1);
 // negative limit (since PHP 5.1)
 print_r(explode('/', $dir, -1));
 
-$new_dir = "/";
+$new_dir = "";
 
 foreach ($subdir as $value) {
-    $new_dir = $new_dir."/".$value;
+    if(!$value != ""){
+        $new_dir = $new_dir."/".$value;
+    }
 }
 
 echo $new_dir;
