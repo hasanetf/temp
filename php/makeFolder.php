@@ -12,14 +12,14 @@ if($dir_access[1] != ""){
 }
 
 if($_SESSION['lvl'] < 3){
-    if(isset($_GET['flName'])){
+    if(isset($_POST['flName'])){
 
-        $flName = $_GET['flName'];  
+        $flName = $_POST['flName'];  
         $fl = $dir.$flName;
         if (!mkdir($fl, 0777, true)) {
             die('Failed to create folders...');
         }
-
     }
 }
+header("location:usbSearch.php");
 ?> 

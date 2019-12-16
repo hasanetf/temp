@@ -39,7 +39,7 @@
                       </td>
                       <td >
                           <ul>
-                              <a href="makeFolder.php">
+                              <a href="javascript:void(0)" onclick="uploadFile(2,'mkdir')">
                                   <li>Make folder</li>
                               </a>
                           </ul>
@@ -55,16 +55,27 @@
               </table>
             </div>
 
-        <div id="upload">
-            <h2> Upload file</h2>
-            <form action="uploadFile.php" method="POST" enctype = "multipart/form-data">
-                Select file to upload:<br>
-                <br>
-                <input type="file" name="uFile">
-                <br><br>
-                <input type="submit" value="Upload file" name="submit">
-            </form>
-        </div>
+            <div id="upload">
+                <h2> Upload file</h2>
+                <form action="uploadFile.php" method="POST" enctype = "multipart/form-data">
+                    Select file to upload:<br>
+                    <br>
+                    <input type="file" name="uFile">
+                    <br><br>
+                    <input type="submit" value="Upload file" name="submit">
+                </form>
+            </div>
+
+            <div id="mkdir">
+                <h2> Folder creation</h2>
+                <form action="makeFolder.php" method="POST">
+                    Folder name:<br>
+                    <br>
+                    <input type="text" name="flName">
+                    <br><br>
+                    <input type="submit" value="Create folder">
+                </form>
+            </div>
 
             <div class="wrapper"> 
                 <?php include("brwFiles.php");
