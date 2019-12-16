@@ -51,7 +51,9 @@
             <h2> Upload file</h2>
             <form action="uploadFile.php" method="post">
                 Select file to upload:<br>
-                <input type="file" name="fileToUpload"  id="fileToUpload"><br>
+                <br>
+                <input type="file" name="fileToUpload"  id="fileToUpload">
+                <br><br>
                 <input type="submit" value="Upload file" name="submit">
             </form>
         </div>
