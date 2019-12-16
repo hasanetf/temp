@@ -25,7 +25,7 @@
                 $valueA = $value; 
             }
 
-            echo "<tr><td>";
+            echo '<tr><td  width="40">';
             if($detDir){
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
                 if($valueA != "-1"){
