@@ -66,6 +66,19 @@
 
                 echo $value."</a></td>";
             }
+            if($_SESSION['lvl']<2){
+                if($valueA != "-1"){
+                    echo '<td>';
+                    if($detDir){
+                        echo '<a href="delFolder.php?dir='.$valueA.'">';
+                    }else{
+                        echo '<a href="delFile.php?dir='.$valueA.'">';
+                    }
+                    echo '<img src="../trash.png"  width="30" height="30" />';
+                    echo '</a></td>';
+                }
+            }
+
             echo "</tr>";
         }  
     }
