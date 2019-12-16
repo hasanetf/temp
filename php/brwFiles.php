@@ -40,8 +40,8 @@
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
                 echo $value."</a></td>";
             }else{
-                #echo '<a href="'.$dir.'/'.$valueA.' download">';
-                echo '<a href="../usb/results.txt" download">';
+                $dir_access = explode('/mnt/sda1/', $dir);
+                echo '<a href="usb/'.$dir_access[1].' download">';
                 echo '<img src="../file.png"  width="30" height="30" />';
                 echo "</a>";
                 echo "</td><td>";
