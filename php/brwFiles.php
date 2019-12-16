@@ -15,6 +15,14 @@
 
     $files = scandir($dir);
 
+    $dir_access = explode('/mnt/sda1/', $dir);
+
+    if($dir_access[1] != ""){
+        echo '<tr><th> Path: USB/'.$dir_access[1].'/'.$value.' </th></tr>';
+    }else{
+        echo '<tr><th> Path: USB/ </th></tr>';
+    }
+    
     foreach($files as $value){
         if($value != "."){
             $b = $dir."/".$value;
@@ -24,7 +32,6 @@
             }else{
                 $valueA = $value; 
             }
-
             echo '<tr><td  width="40">';
             if($detDir){
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
@@ -40,7 +47,6 @@
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
                 echo $value."</a></td>";
             }else{
-                $dir_access = explode('/mnt/sda1/', $dir);
 
                 if($dir_access[1] != ""){
                     echo '<a href="../usb/'.$dir_access[1].'/'.$value.'" download>';
