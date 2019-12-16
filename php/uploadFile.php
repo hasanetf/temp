@@ -1,35 +1,33 @@
 <?php
 @session_start();
 
-$target_dir = $_SESSION['cur_path'];
-$target_file = $target_dir . basename($_FILES["uFile"]["name"]);
-$uploadOk = 1;
-echo $_SESSION['lvl'].$target_file.$uploadOk;
+$dir_access = $_SESSION['cur_path'];
+
+$dir_access = explode('/mnt/sda1/', $dir);
+
+$dir = "usb/";
+
+if($dir_access[1] != ""){
+    $dir = $dir.$dir_access[1]."/";
+}
 
 if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
     if(isset($_FILES["uFile"])){
-        // Check if file already exists
-        if (file_exists($target_file)) {
-            echo "Sorry, file already exists.";
-            $uploadOk = 0;
+        $errors= array();
+        $file_name = $_FILES['uFile']['name'];
+        $file_size = $_FILES['uFile']['size'];
+        $file_tmp = $_FILES['uFile']['tmp_name'];
+        $file_type = $_FILES['uFile']['type'];
+        
+        if($file_size > 52428800) {
+           $errors[]='File size must be excately 50 MB';
         }
-        // Check file size
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
-            echo "Sorry, your file is too large.";
-            $uploadOk = 0;
-        }
-
-        // Check if $uploadOk is set to 0 by an error
-        if ($uploadOk == 0) {
-            echo "TEST";
-            echo "Sorry, your file was not uploaded.";
-        // if everything is ok, try to upload file
-        } else {
-            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
-            } else {
-                echo "Sorry, there was an error uploading your file.";
-            }
+        
+        if(empty($errors)==true) {
+           move_uploaded_file($file_tmp, $dir .$file_name);
+           echo "Success";
+        }else{
+           print_r($errors);
         }
     }else{
         echo "File doesn't exist";
