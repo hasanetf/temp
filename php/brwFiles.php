@@ -27,7 +27,12 @@
 
             echo "<tr><td>";
             if($detDir){
-                echo '<img src="../folder.jpeg"  width="30" height="30" />';
+                if($valueA != "-1"){
+                    echo '<img src="../folder.jpeg"  width="30" height="30" />';
+                }else{
+                    echo '<img src="../back.jpg"  width="30" height="30" />';
+                }
+                
                 echo "</td><td>";
 
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
