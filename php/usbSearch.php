@@ -10,6 +10,7 @@
 
     </head>
 <body>
+    <script src="../js/showHide.js"></script>
     <div class="main_div" id="div1">
         <header> 
             <div class="logo" id="logo" align="center">
@@ -24,7 +25,7 @@
                   <tr>
                       <td>
                           <ul> 
-                            <a href="uploadFile.php">
+                            <a href="javascript:uploadFile(2);">
                               <li>Upload file</li>
                             </a>
                           </ul>
