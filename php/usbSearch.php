@@ -30,6 +30,9 @@
             </h1>
             <div id="nav"> <table >
                   <tr>
+                    <?php
+                        if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
+                    ?>   
                       <td>
                           <ul> 
                             <a href="javascript:void(0)" onclick="uploadFile(2,'upload')">
@@ -37,6 +40,11 @@
                             </a>
                           </ul>
                       </td>
+                    <?php
+                        }
+                        
+                        if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 2){
+                    ?>
                       <td >
                           <ul>
                               <a href="javascript:void(0)" onclick="uploadFile(2,'mkdir')">
@@ -44,6 +52,9 @@
                               </a>
                           </ul>
                       </td>
+                    <?php
+                        }
+                    ?>
                       <td >
                           <ul>
                               <a href="../index.php">
