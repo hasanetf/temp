@@ -1,5 +1,8 @@
 
 <?php
+
+@session_start();
+
 $target_dir = $_SESSION['cur_path'];
 $target_file = $target_dir . basename($_FILES["uFile"]["name"]);
 $uploadOk = 1;
