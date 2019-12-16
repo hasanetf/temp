@@ -11,11 +11,11 @@
     </head>
 <body>
     <script>
-        function uploadFile(a){
+        function uploadFile(a,b){
                 if(a==1)
-                    document.getElementById("upload").style.display="none";
+                    document.getElementById(b).style.display="none";
                 else
-                    document.getElementById("upload").style.display="block";
+                    document.getElementById(b).style.display="block";
             }
     </script>
     <div class="main_div" id="div1">
@@ -32,7 +32,7 @@
                   <tr>
                       <td>
                           <ul> 
-                            <a href="javascript:void(0)" onclick="uploadFile(2)">
+                            <a href="javascript:void(0)" onclick="uploadFile(2,'upload')">
                               <li>Upload file</li>
                             </a>
                           </ul>

@@ -69,11 +69,7 @@
             if($_SESSION['lvl']<2){
                 if($valueA != "-1"){
                     echo '<td>';
-                    if($detDir){
-                        echo '<a href="delFile.php?flName='.$valueA.'">';
-                    }else{
-                        echo '<a href="delFile.php?flName='.$valueA.'">';
-                    }
+                    echo '<a href="delFile.php?flName='.$valueA.'">';
                     echo '<img src="../trash.jpg"  width="30" 
                     height="30" style="float: right;"/>';
                     echo '</a></td>';
