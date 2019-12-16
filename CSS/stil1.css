@@ -62,8 +62,14 @@ width:300px;
 	width: 50%;
 	padding: 10px;
 }
+
 #usbhdr {
-	border: 1px solid rgb(255, 4, 4);
+	border: 1px solid rgb(48, 48, 48);
+	margin: auto;
+}
+
+#upload{
+	z-index: 1;
 	margin: auto;
 }
 

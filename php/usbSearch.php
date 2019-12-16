@@ -47,6 +47,15 @@
               </table>
             </div>
 
+        <div id="upload">
+            <h2> Upload file</h2>
+            <form action="uploadFile.php" method="post">
+                Select file to upload:<br>
+                <input type="file" name="fileToUpload"  id="fileToUpload"><br>
+                <input type="submit" value="Upload file" name="submit">
+            </form>
+        </div>
+
             <div class="wrapper"> 
                 <?php include("brwFiles.php");
                 ?>
