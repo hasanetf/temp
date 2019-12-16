@@ -20,10 +20,7 @@ if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 2){
 
         if (!unlink($fl)) {  
             echo ("$fl cannot be deleted due to an error");  
-        }  
-        else {  
-            echo ("$fl has been deleted");  
-        }  
+        } 
     }
 }
 
