@@ -32,6 +32,6 @@ if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
         echo "File doesn't exist";
     }
 }else{
-    echo "Debug"
+    echo "Debug";
 }
 ?>
