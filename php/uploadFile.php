@@ -32,5 +32,5 @@ if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
 
 }
 
-header("location:brwFiles.php");
+header("location:usbSearch.php");
 ?>
