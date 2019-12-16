@@ -40,9 +40,12 @@
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
                 echo $value."</a></td>";
             }else{
+                echo '<a href="'.$dir.'/'.$valueA.'">';
                 echo '<img src="../file.png"  width="30" height="30" />';
+                echo "</a>";
                 echo "</td><td>";
-                echo $value."</td>";
+                echo '<a href="'.$dir.'/'.$valueA.'">';
+                echo $value."</a></td>";
             }
             echo "</tr>";
         }  
