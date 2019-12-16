@@ -46,7 +46,8 @@ width:300px;
 	z-index: 1;
 	width: 300px;
 	left: 50%;
-	margin-left: -150px;   
+	margin-left: -150px;
+	padding: 10px;  
 }
 
 .wrapper {
