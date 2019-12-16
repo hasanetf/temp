@@ -6,6 +6,7 @@
 $target_dir = $_SESSION['cur_path'];
 $target_file = $target_dir . basename($_FILES["uFile"]["name"]);
 $uploadOk = 1;
+echo $_SESSION['lvl'];
 if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
     if(isset($_FILES["uFile"])){
         // Check if file already exists
