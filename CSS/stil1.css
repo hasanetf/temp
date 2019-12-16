@@ -40,6 +40,12 @@ vertical-align:top;
 width:300px;
 }
 
+#upload{
+	position: relative;
+	z-index: 1;
+	margin: auto;
+}
+
 .wrapper {
 	margin: auto;
 	width: 50%;
@@ -68,10 +74,7 @@ width:300px;
 	margin: auto;
 }
 
-#upload{
-	z-index: 1;
-	margin: auto;
-}
+
 
 #return {
 	position:absolute;
