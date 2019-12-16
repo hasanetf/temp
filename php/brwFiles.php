@@ -18,9 +18,9 @@
     $dir_access = explode('/mnt/sda1/', $dir);
 
     if($dir_access[1] != ""){
-        echo '<tr id="usbhdr"><th> USB/'.$dir_access[1].'/'.$value.' </th></tr>';
+        echo '<tr ><th id="usbhdr"> USB/'.$dir_access[1].'/'.$value.' </th></tr>';
     }else{
-        echo '<tr id="usbhdr"><th> USB/ </th></tr>';
+        echo '<tr><th id="usbhdr"> USB/ </th></tr>';
     }
 
     foreach($files as $value){
