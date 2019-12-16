@@ -11,6 +11,8 @@ if($dir_access[1] != ""){
     $dir = $dir.$dir_access[1]."/";
 }
 
+echo $dir."  ".$dir_access[1];
+
 if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
     if(isset($_FILES["uFile"])){
         $errors= array();
