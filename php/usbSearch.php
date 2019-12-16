@@ -57,10 +57,10 @@
 
         <div id="upload">
             <h2> Upload file</h2>
-            <form action="uploadFile.php" method="post">
+            <form action="uploadFile.php" method="POST" enctype = "multipart/form-data">
                 Select file to upload:<br>
                 <br>
-                <input type="file" name="uFile"  id="uFile">
+                <input type="file" name="uFile">
                 <br><br>
                 <input type="submit" value="Upload file" name="submit">
             </form>
