@@ -74,7 +74,8 @@
                     }else{
                         echo '<a href="delFile.php?dir='.$valueA.'">';
                     }
-                    echo '<img src="../trash.png"  width="30" height="30" />';
+                    echo '<img src="../trash.jpg"  width="30" 
+                    height="30" style="float: right;"/>';
                     echo '</a></td>';
                 }
             }
