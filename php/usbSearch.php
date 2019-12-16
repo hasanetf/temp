@@ -10,7 +10,14 @@
 
     </head>
 <body>
-    <script src="../js/showHide.js"></script>
+    <script>
+        function uploadFile(a){
+                if(a==1)
+                    document.getElementById("upload").style.display="none";
+                else
+                    document.getElementById("upload").style.display="block";
+            }
+    </script>
     <div class="main_div" id="div1">
         <header> 
             <div class="logo" id="logo" align="center">
