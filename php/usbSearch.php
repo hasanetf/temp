@@ -60,7 +60,7 @@
             <form action="uploadFile.php" method="post">
                 Select file to upload:<br>
                 <br>
-                <input type="file" name="fileToUpload"  id="fileToUpload">
+                <input type="file" name="uFile"  id="uFile">
                 <br><br>
                 <input type="submit" value="Upload file" name="submit">
             </form>
