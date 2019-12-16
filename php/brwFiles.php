@@ -41,11 +41,11 @@
                 echo $value."</a></td>";
             }else{
                 $dir_access = explode('/mnt/sda1/', $dir);
-                echo '<a href="usb/'.$dir_access[1].' download">';
+                echo '<a href="usb/'.$dir_access[1].$value.' download">';
                 echo '<img src="../file.png"  width="30" height="30" />';
                 echo "</a>";
                 echo "</td><td>";
-                echo '<a href="'.$dir.'/'.$valueA.' download">';
+                echo '<a href="usb/'.$dir_access[1].$value.' download">';
                 echo $value."</a></td>";
             }
             echo "</tr>";
