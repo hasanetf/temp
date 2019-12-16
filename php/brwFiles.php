@@ -27,9 +27,14 @@
 
             echo "<tr><td>";
             if($detDir){
+                echo '<img src="folder.jpeg" />';
+                echo "</td><td>";
+
                 echo '<a href="updatePath.php?dir='.$valueA.'">';
                 echo $value."</a></td>";
             }else{
+                echo '<img src="file.jpeg" />';
+                echo "</td><td>";
                 echo $value."</td>";
             }
             echo "</tr>";
