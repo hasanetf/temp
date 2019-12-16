@@ -25,7 +25,7 @@
                   <tr>
                       <td>
                           <ul> 
-                            <a href="javascript:uploadFile(2);">
+                            <a href="javascript:void(0)" onclick="uploadFile(2)">
                               <li>Upload file</li>
                             </a>
                           </ul>
