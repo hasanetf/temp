@@ -1,6 +1,14 @@
 <?php 
 @session_start();
 
+ function delTree($dir) {
+    $files = array_diff(scandir($dir), array('.','..'));
+     foreach ($files as $file) {
+       (is_dir("$dir/$file")) ? delTree("$dir/$file") : unlink("$dir/$file");
+     }
+     return rmdir($dir);
+} 
+
 if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 2){
     $dir_cur = $_SESSION['cur_path'];
 
@@ -18,7 +26,7 @@ if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 2){
         
         $fl = $dir.$flName;
         if(is_dir($fl)){
-            if(!rmdir($fl)){
+            if(!delTree($fl)){
                 echo ("$fl cannot be deleted due to an error"); 
             }
         }else{
