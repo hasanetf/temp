@@ -24,7 +24,7 @@ if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 3){
         }
         
         if(empty($errors)==true) {
-           move_uploaded_file($file_tmp, $dir .$file_name);
+           move_uploaded_file($file_tmp, $dir.$file_name);
         }else{
            print_r($errors);
         }

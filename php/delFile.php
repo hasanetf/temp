@@ -17,12 +17,16 @@ if(isset($_SESSION['lvl']) && $_SESSION['lvl'] < 2){
         $flName = $_GET['flName'];  
         
         $fl = $dir.$flName;
-
-        if (!unlink($fl)) {  
-            echo ("$fl cannot be deleted due to an error");  
-        } 
+        if(is_dir($fl)){
+            if(!rmdir($fl)){
+                echo ("$fl cannot be deleted due to an error"); 
+            }
+        }else{
+            if (!unlink($fl)) {  
+                echo ("$fl cannot be deleted due to an error");  
+            } 
+        }
     }
 }
-
 header("location:usbSearch.php");
 ?>  
