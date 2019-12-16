@@ -39,8 +39,8 @@
                       </td>
                       <td >
                           <ul>
-                              <a href="deleteFile.php">
-                                  <li>Delete file</li>
+                              <a href="makeFolder.php">
+                                  <li>Make folder</li>
                               </a>
                           </ul>
                       </td>

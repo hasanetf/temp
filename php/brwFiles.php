@@ -72,7 +72,7 @@
                     if($detDir){
                         echo '<a href="delFolder.php?dir='.$valueA.'">';
                     }else{
-                        echo '<a href="delFile.php?dir='.$valueA.'">';
+                        echo '<a href="delFile.php?flName='.$valueA.'">';
                     }
                     echo '<img src="../trash.jpg"  width="30" 
                     height="30" style="float: right;"/>';
