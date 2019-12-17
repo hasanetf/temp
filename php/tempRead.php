@@ -63,10 +63,10 @@
 
                     // Define the axes
                     var xAxis = d3.svg.axis().scale(x)
-                        .orient("bottom").ticks(10);
+                        .orient("bottom").ticks(8);
 
                     var yAxis = d3.svg.axis().scale(y)
-                        .orient("left").ticks(10);
+                        .orient("left").ticks(8);
 
                     // Define the line
                     var valueline = d3.svg.line()
@@ -106,7 +106,7 @@
 
                         svg.append("text")
                             .attr("transform",
-                                "translate(" + (width/2) + " ," + 
+                                "translate(" + (width) + " ," + 
                                                 (height+margin.bottom) + ")")
                             .style("text-anchor", "middle")
                             .text("Time");
