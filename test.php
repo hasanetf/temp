@@ -6,7 +6,7 @@ $result = $statement->execute();
 $row = $result->fetchArray();
 $total = $row[0];
 
-$statement = $db->prepare('SELECT * FROM table LIMIT 50 OFFSET ?-50');
+$statement = $db->prepare('SELECT * FROM temp LIMIT 50 OFFSET ?-50');
 $statement->bindValue(1, $total, SQLITE3_INTEGER);
 $result = $statement->execute();
 
