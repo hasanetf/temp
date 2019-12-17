@@ -48,6 +48,7 @@
             </div>
             <div id=graph>
                 <h1>Test</h1>
+            </div>
                 <script>    
 
                     // Set the dimensions of the canvas / graph
@@ -125,7 +126,6 @@
                             .text("Temperature");
                         });
                     </script>
-            </div>
             <p  id=return><a href="#top">Top of the page</a></p>
         </div>
     </div>
