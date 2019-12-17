@@ -64,10 +64,11 @@ width:300px;
 	padding: 5px;  
 }
 
-#graph{
+div.graph{
 	border: 3px solid rgb(48, 48, 48);
 	position: relative;
 	width: 700px;
+	height: 700px;
 	left: 50%;
 	margin: 20px;
 	margin-left: -350px;
