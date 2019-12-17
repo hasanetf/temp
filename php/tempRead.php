@@ -85,7 +85,7 @@
                     // Get the data
                     d3.csv("readData.php", function(error, data) {
                         data.forEach(function(d) {
-                            d.date = parseDate(d.date);
+                            d.date = d.date;
                             d.close = +d.close;
                         });
 
