@@ -55,7 +55,7 @@
                         height = 270 - margin.top - margin.bottom;
 
                     // Parse the date / time
-                    var parseDate = d3.time.format("%H:%M:%S").parse;
+                    var parseDate = d3.time.format("%H").parse;
 
                     // Set the ranges
                     var x = d3.time.scale().range([0, width]);
@@ -85,7 +85,7 @@
                     // Get the data
                     d3.csv("readData.php", function(error, data) {
                         data.forEach(function(d) {
-                            d.date = d.date;
+                            d.date = parseDate(d.date);
                             d.close = +d.close;
                         });
 
@@ -109,7 +109,7 @@
                                 "translate(" + (width/2) + " ," + 
                                                 (height+margin.bottom) + ")")
                             .style("text-anchor", "middle")
-                            .text("Date");
+                            .text("Time");
 
                         // Add the Y Axis
                         svg.append("g")
