@@ -28,7 +28,7 @@
 
                     // Define the axes
                     var xAxis = d3.svg.axis().scale(x)
-                        .orient("bottom").ticks(30);
+                        .orient("bottom").ticks(20);
 
                     var yAxis = d3.svg.axis().scale(y)
                         .orient("left").ticks(10);
