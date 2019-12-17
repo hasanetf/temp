@@ -125,8 +125,6 @@
                         });
                     </script>
             </div>
-            <div class="wrapper"> 
-            </div>
             <p  id=return><a href="#top">Top of the page</a></p>
         </div>
     </div>
