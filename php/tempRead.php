@@ -47,6 +47,7 @@
               </table>
             </div>
             <div id=graph>
+                <h1>Test</h1>
                 <script>    
 
                     // Set the dimensions of the canvas / graph
@@ -74,7 +75,7 @@
                         .y(function(d) { return y(d.close); });
                         
                     // Adds the svg canvas
-                    var svg = d3.select("graph")
+                    var svg = d3.select("body")
                         .append("svg")
                             .attr("width", width + margin.left + margin.right)
                             .attr("height", height + margin.top + margin.bottom)
