@@ -5,7 +5,9 @@ $statement = $db->prepare('SELECT * FROM temp ORDER BY id LIMIT 20;');
 $result = $statement->execute();
 
 while ($row = $result->fetchArray()) {
-print $row['t'].",".$row['v']."\n";
+    $subtime = explode(' ',  $row['t']);
+    print_r($subtime);
+    print $row['t'].",".$row['v']."\n";
 }
 $db->close();
 ?>
