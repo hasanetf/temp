@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html;" charset=UTF-8”>
-        <meta http-equiv="refresh" content="2" />
+        <meta http-equiv="refresh" content="3" />
         <title>Login page</title>
         
         <link rel="stylesheet" type="text/css" href="../CSS/stil1.css">
@@ -16,8 +16,8 @@
 
                     // Set the dimensions of the canvas / graph
                     var margin = {top: 30, right: 20, bottom: 30, left: 30},
-                        width = 1400 - margin.left - margin.right,
-                        height = 270 - margin.top - margin.bottom;
+                        width = 1470 - margin.left - margin.right,
+                        height = 570 - margin.top - margin.bottom;
 
                     // Parse the date / time
                     var parseDate = d3.time.format("%H:%M:%S").parse;
