@@ -33,7 +33,7 @@
               </table>
             </div>
             <div id=graph>                
-                <iframe src="itempRead.php" height="500" width="1500"></iframe> 
+                <iframe src="itempRead.php" height="400" width="1500"></iframe> 
             </div>
                 
             <p  id=return><a href="#top">Top of the page</a></p>
