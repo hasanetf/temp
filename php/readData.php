@@ -1,7 +1,7 @@
 <?php
 print "date,close\n";
 $db = new SQLite3('/www/temp/control4.db') or die('Unable to open database');
-$statement = $db->prepare('SELECT * FROM temp ORDER BY id LIMIT 50 DESC;');
+$statement = $db->prepare('(SELECT * FROM temp ORDER BY id DESC LIMIT 50) ORDER BY id;');
 $result = $statement->execute();
 
 while ($row = $result->fetchArray()) {
