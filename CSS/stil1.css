@@ -113,7 +113,7 @@ div.button_wrapper {
 	align-items: center;
 	justify-content: center;
 	height: 50px;
-	width: 900px;
+	width: 1000px;
 	background: #117848;
 	background: url(../bg-header.jpg);
 	margin-left: auto;    /*   These are the    */
@@ -131,7 +131,7 @@ div.button_wrapper {
 }
 
 #nav td{
-	width:300px;
+	width:250px;
 	height:24px; 
 	color: white;
 	text-align:center;
