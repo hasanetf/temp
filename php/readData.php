@@ -7,7 +7,7 @@ $result = $statement->execute();
 while ($row = $result->fetchArray()) {
     $subtime = explode(' ',  $row['t']);
     print_r($subtime);
-    print $row['t'].",".$row['v']."\n";
+    print $subtime[2].",".($row['v']/1000)."\n";
 }
 $db->close();
 ?>
