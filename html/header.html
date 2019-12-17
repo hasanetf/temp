@@ -21,7 +21,20 @@
             </td>
         <?php 
             }
+        if(isset( $_SESSION['lvl']) && $_SESSION['lvl'] < 4)
+            {
         ?>
+        <td >
+            <ul>
+                <a href="php/tempRead.php">
+                    <li>Read temperature</li>
+                </a>
+            </ul>
+        </td>
+        <?php 
+            }
+        ?>
+
         <?php
             include("html/logout.html");
         ?>
