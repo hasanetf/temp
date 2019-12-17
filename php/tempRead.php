@@ -4,7 +4,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html;" charset=UTF-8”>
-        <meta http-equiv="refresh" content="1" />
+        <meta http-equiv="refresh" content="5" />
         <title>Login page</title>
         
         <link rel="stylesheet" type="text/css" href="../CSS/stil1.css">
