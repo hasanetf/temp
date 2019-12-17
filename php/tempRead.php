@@ -4,6 +4,7 @@
 <html>
     <head>
         <meta http-equiv="content-type" content="text/html;" charset=UTF-8”>
+        <meta http-equiv="refresh" content="1" />
         <title>Login page</title>
         
         <link rel="stylesheet" type="text/css" href="../CSS/stil1.css">
@@ -63,10 +64,10 @@
 
                     // Define the axes
                     var xAxis = d3.svg.axis().scale(x)
-                        .orient("bottom").ticks(8);
+                        .orient("bottom").ticks(10);
 
                     var yAxis = d3.svg.axis().scale(y)
-                        .orient("left").ticks(8);
+                        .orient("left").ticks(10);
 
                     // Define the line
                     var valueline = d3.svg.line()
