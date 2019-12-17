@@ -17,7 +17,7 @@
                     // Set the dimensions of the canvas / graph
                     var margin = {top: 30, right: 20, bottom: 30, left: 30},
                         width = 1470 - margin.left - margin.right,
-                        height = 570 - margin.top - margin.bottom;
+                        height = 470 - margin.top - margin.bottom;
 
                     // Parse the date / time
                     var parseDate = d3.time.format("%H:%M:%S").parse;
@@ -28,7 +28,7 @@
 
                     // Define the axes
                     var xAxis = d3.svg.axis().scale(x)
-                        .orient("bottom").ticks(50);
+                        .orient("bottom").ticks(40);
 
                     var yAxis = d3.svg.axis().scale(y)
                         .orient("left").ticks(10);
